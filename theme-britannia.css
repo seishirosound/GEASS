@@ -1,0 +1,89 @@
+
+/* === Тема: Британия (Code Geass) === */
+body.theme-britannia {
+    --bg-primary: #120f1d;
+    --bg-secondary: rgba(36, 24, 52, 0.76);
+    --text-primary: #e3d9c9;
+    --text-accent: #d45d4d;
+    --font-heading: 'Cinzel', 'Times New Roman', serif;
+    --font-body: 'Lora', 'Georgia', serif;
+    --accent-color: #c44536;
+    --border-color: rgba(196, 69, 54, 0.34);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    background-image:
+        radial-gradient(circle at top right, rgba(196, 69, 54, 0.16), transparent 34%),
+        linear-gradient(180deg, rgba(10, 8, 15, 0.52), rgba(10, 8, 15, 0.72)),
+        url('../images/frames/britannia_panel.png');
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center, center, right bottom;
+    background-size: cover, cover, min(42vw, 760px);
+    background-attachment: fixed, fixed, fixed;
+}
+
+body.theme-britannia header,
+body.theme-britannia section,
+body.theme-britannia footer {
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+}
+
+body.theme-britannia header {
+    background: linear-gradient(135deg, rgba(39, 22, 54, 0.88), rgba(67, 28, 43, 0.86));
+    border-color: rgba(196, 69, 54, 0.26);
+}
+
+body.theme-britannia .hero::after {
+    background: linear-gradient(135deg, transparent 40%, rgba(196, 69, 54, 0.12));
+}
+
+body.theme-britannia h1,
+body.theme-britannia h2,
+body.theme-britannia h3 {
+    font-family: var(--font-heading);
+    color: #f3c0a6;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+}
+
+body.theme-britannia .hero-kicker,
+body.theme-britannia .character-tag {
+    background: rgba(196, 69, 54, 0.12);
+    border-color: rgba(196, 69, 54, 0.25);
+}
+
+body.theme-britannia .feature-card,
+body.theme-britannia .character-card,
+body.theme-britannia .comment-item,
+body.theme-britannia .comment-form-container,
+body.theme-britannia .browser-window,
+body.theme-britannia .browser-terminal,
+body.theme-britannia .metric {
+    background: rgba(30, 19, 42, 0.74);
+    border-color: rgba(255, 223, 200, 0.09);
+}
+
+body.theme-britannia .theme-btn,
+body.theme-britannia .button-link {
+    background: linear-gradient(135deg, #a83d33, #5b2440);
+    border: 1px solid rgba(255, 218, 202, 0.18);
+    color: #fff5eb;
+}
+
+body.theme-britannia .theme-btn:hover,
+body.theme-britannia .button-link:hover {
+    box-shadow: 0 12px 28px rgba(196, 69, 54, 0.28);
+}
+
+body.theme-britannia input,
+body.theme-britannia textarea {
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--text-primary);
+}
+
+body.theme-britannia .browser-dots i {
+    background: #f5b67c;
+}
+
+body.theme-britannia footer {
+    background: rgba(26, 16, 34, 0.72);
+}

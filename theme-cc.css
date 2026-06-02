@@ -1,0 +1,78 @@
+
+/* === Тема: C.C. (Code Geass) === */
+body.theme-cc {
+    --bg-primary: #eef6f0;
+    --bg-secondary: rgba(221, 239, 228, 0.82);
+    --text-primary: #254236;
+    --text-accent: #1f7a4c;
+    --font-heading: 'Montserrat', 'Arial', sans-serif;
+    --font-body: 'Roboto', 'Segoe UI', sans-serif;
+    --accent-color: #3cb371;
+    --border-color: rgba(60, 179, 113, 0.22);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    background-image:
+        radial-gradient(circle at top right, rgba(60, 179, 113, 0.18), transparent 34%),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.66), rgba(237, 246, 240, 0.88)),
+        url('../images/frames/cc_panel.png');
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center, center, right bottom;
+    background-size: cover, cover, min(40vw, 680px);
+    background-attachment: fixed, fixed, fixed;
+}
+
+body.theme-cc header {
+    background: linear-gradient(135deg, rgba(209, 240, 219, 0.9), rgba(161, 225, 184, 0.82));
+    border-color: rgba(60, 179, 113, 0.24);
+}
+
+body.theme-cc h1,
+body.theme-cc h2,
+body.theme-cc h3 {
+    font-family: var(--font-heading);
+    color: #16744d;
+}
+
+body.theme-cc .hero-kicker,
+body.theme-cc .character-tag {
+    background: rgba(60, 179, 113, 0.12);
+    border-color: rgba(60, 179, 113, 0.22);
+}
+
+body.theme-cc .feature-card,
+body.theme-cc .character-card,
+body.theme-cc .comment-item,
+body.theme-cc .comment-form-container,
+body.theme-cc .browser-window,
+body.theme-cc .browser-terminal,
+body.theme-cc .metric {
+    background: rgba(255, 255, 255, 0.75);
+    border-color: rgba(60, 179, 113, 0.16);
+}
+
+body.theme-cc .theme-btn,
+body.theme-cc .button-link {
+    background: linear-gradient(135deg, #e8fff0, #c7efda);
+    border: 1px solid rgba(60, 179, 113, 0.3);
+    color: var(--text-accent);
+}
+
+body.theme-cc .theme-btn:hover,
+body.theme-cc .button-link:hover {
+    box-shadow: 0 12px 24px rgba(60, 179, 113, 0.2);
+}
+
+body.theme-cc input,
+body.theme-cc textarea {
+    background: rgba(255, 255, 255, 0.88);
+    color: var(--text-primary);
+}
+
+body.theme-cc .browser-dots i {
+    background: var(--accent-color);
+}
+
+body.theme-cc footer {
+    background: rgba(255, 255, 255, 0.76);
+}

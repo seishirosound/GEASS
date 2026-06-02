@@ -1,0 +1,83 @@
+@keyframes float-soft {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-8px) rotate(-0.25deg); }
+}
+
+@keyframes float-wide {
+    0%, 100% { transform: translateY(0px) scale(1); }
+    50% { transform: translateY(-12px) scale(1.01); }
+}
+
+@keyframes glow-pulse {
+    0%, 100% { box-shadow: 0 0 0 rgba(0,0,0,0); }
+    50% { box-shadow: 0 0 26px rgba(255,255,255,0.12); }
+}
+
+@keyframes cursor-blink {
+    0%, 49% { opacity: 1; }
+    50%, 100% { opacity: 0; }
+}
+
+@keyframes shimmer-sweep {
+    0% { transform: translateX(-120%); }
+    100% { transform: translateX(120%); }
+}
+
+@keyframes reveal-up {
+    from { opacity: 0; transform: translateY(30px) scale(0.985); filter: blur(2px); }
+    to { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+}
+
+@keyframes reveal-left {
+    from { opacity: 0; transform: translateX(-26px) scale(0.985); filter: blur(2px); }
+    to { opacity: 1; transform: translateX(0) scale(1); filter: blur(0); }
+}
+
+@keyframes reveal-right {
+    from { opacity: 0; transform: translateX(26px) scale(0.985); filter: blur(2px); }
+    to { opacity: 1; transform: translateX(0) scale(1); filter: blur(0); }
+}
+
+@keyframes card-pop {
+    from { opacity: 0; transform: translateY(14px) scale(0.97); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.hero-visual .theme-art {
+    animation: float-wide 8s ease-in-out infinite, glow-pulse 5s ease-in-out infinite;
+}
+
+body.theme-britannia .theme-art-main,
+body.theme-britannia .theme-art-card { animation: float-soft 7s ease-in-out infinite; }
+body.theme-cc .theme-art-main,
+body.theme-cc .theme-art-card { animation: float-wide 9s ease-in-out infinite; }
+
+.feature-card,
+.character-card,
+.comment-item { animation: card-pop 0.7s ease both; }
+
+.browser-terminal,
+.theme-art-main,
+.theme-art-card { will-change: transform, opacity, filter; }
+
+.cursor {
+    display: inline-block;
+    width: 0.72ch;
+    height: 1.05em;
+    background: currentColor;
+    vertical-align: -0.18em;
+    animation: cursor-blink 1s step-end infinite;
+}
+
+.pulse-animation { animation: glow-pulse 2.6s ease-in-out infinite; }
+.float-animation { animation: float-soft 5s ease-in-out infinite; }
+
+.comment-item { position: relative; overflow: hidden; }
+.comment-item.appearing { animation: reveal-up 0.45s ease both; }
+
+.theme-switching {
+    filter: saturate(0.92) blur(0.35px);
+}
+
+body.theme-britannia .theme-art::after,
+body.theme-cc .theme-art::after { animation: shimmer-sweep 1.1s ease forwards; }
