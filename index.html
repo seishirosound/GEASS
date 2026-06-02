@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODE:GEASS — Веб-браузер нового поколения</title>
+    <meta name="description" content="Концепт-веб-браузер CODE:GEASS в двух темах — Британия и C.C.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:ital@0;1&family=Montserrat:wght@300;400;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/theme-britannia.css">
+    <link rel="stylesheet" href="css/theme-cc.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🟣</text></svg>">
+</head>
+<body class="theme-britannia">
+    <header>
+        <div class="logo">
+            <h1>CODE:<span class="accent">GEASS</span></h1>
+            <p class="tagline">Браузер, подчиняющий пространство сети</p>
+        </div>
+        <button id="theme-toggle" class="theme-btn pulse-animation" type="button" aria-pressed="false">🌙 Тема Британия</button>
+    </header>
+
+    <main>
+        <section class="hero reveal" data-reveal-delay="0" data-motion="up">
+            <div class="hero-text">
+                <div class="hero-kicker">Имперский интерфейс · философия контроля</div>
+                <h2>Тихий браузер с характером стратегии и власти</h2>
+                <p>CODE:GEASS собран как концепт для тех, кому важны не только функции, но и атмосфера: строгая геометрия, мягкие переходы, два настроения и ощущение сцены, в которой каждый экран работает на историю.</p>
+                <p>Логика остаётся прежней: переключение тем, форма подписки и отзывы работают так же, но теперь интерфейс выглядит цельнее, плотнее и ближе к эстетике самого мира Code Geass.</p>
+                <div class="hero-actions">
+                    <a class="button-link theme-btn" href="#gallery">Смотреть образы</a>
+                    <a class="button-link theme-btn" href="#comments">Отзывы Ордена</a>
+                </div>
+                <div class="hero-metrics">
+                    <div class="metric">
+                        <strong>2 темы</strong>
+                        <span>Британия и C.C.</span>
+                    </div>
+                    <div class="metric">
+                        <strong>0 лишнего</strong>
+                        <span>Без смены логики</span>
+                    </div>
+                    <div class="metric">
+                        <strong>1 архив</strong>
+                        <span>Готов к сборке</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="theme-art theme-art-britannia">
+                    <div class="theme-art-main float-animation">
+                        <img src="images/frames/britannia_poster.png" alt="Лелуш в драматичном кадре для темы Британии" loading="lazy">
+                    </div>
+                    <div class="theme-art-side">
+                        <figure class="theme-art-card">
+                            <img src="images/frames/britannia_closeup.png" alt="Крупный кадр Лелуша для темы Британии" loading="lazy">
+                        </figure>
+                        <figure class="theme-art-card">
+                            <img src="images/frames/britannia_panel.png" alt="Широкий кадр Лелуша для темы Британии" loading="lazy">
+                        </figure>
+                    </div>
+                    <div class="browser-terminal">
+                        <p class="terminal-line"><span class="terminal-highlight">&gt;</span> interface.status = "stable"</p>
+                        <p class="terminal-line"><span class="terminal-highlight">&gt;</span> theme.mode = "britannia"</p>
+                        <p class="terminal-line"><span class="terminal-highlight">&gt;</span> geass.sync = true</p>
+                        <p class="terminal-line">контроль, форма, пауза, решение</p>
+                        <span class="cursor" aria-hidden="true"></span>
+                    </div>
+                </div>
+
+                <div class="theme-art theme-art-cc">
+                    <div class="theme-art-main float-animation">
+                        <img src="images/frames/cc_poster.png" alt="C.C. в мягком кадре для второй темы" loading="lazy">
+                    </div>
+                    <div class="theme-art-side">
+                        <figure class="theme-art-card">
+                            <img src="images/frames/cc_closeup.png" alt="Крупный кадр C.C. для второй темы" loading="lazy">
+                        </figure>
+                        <figure class="theme-art-card">
+                            <img src="images/frames/cc_panel.png" alt="Широкий кадр C.C. для второй темы" loading="lazy">
+                        </figure>
+                    </div>
+                    <div class="browser-terminal">
+                        <p class="terminal-line"><span class="terminal-highlight">&gt;</span> interface.status = "stable"</p>
+                        <p class="terminal-line"><span class="terminal-highlight">&gt;</span> theme.mode = "cc"</p>
+                        <p class="terminal-line"><span class="terminal-highlight">&gt;</span> geass.sync = true</p>
+                        <p class="terminal-line">воздух, свет, тишина, глубина</p>
+                        <span class="cursor" aria-hidden="true"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features reveal" data-reveal-delay="90" data-motion="left">
+            <h2>Что добавлено в композицию</h2>
+            <div class="features-grid">
+                <article class="feature-card">
+                    <div class="feature-media">
+                        <img class="theme-img theme-img-britannia" src="images/frames/britannia_panel.png" alt="Кадр для темы Британии" loading="lazy">
+                        <img class="theme-img theme-img-cc" src="images/frames/cc_panel.png" alt="Кадр для темы C.C." loading="lazy">
+                    </div>
+                    <h3>Более цельная сцена</h3>
+                    <p>Ключевые блоки собраны в визуально единый экран: герой, обзор и вспомогательные карточки теперь работают как цельная витрина, а не как набор разрозненных секций.</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-media">
+                        <img class="theme-img theme-img-britannia" src="images/frames/britannia_closeup.png" alt="Лелуш для тёмной темы" loading="lazy">
+                        <img class="theme-img theme-img-cc" src="images/frames/cc_closeup.png" alt="C.C. для светлой темы" loading="lazy">
+                    </div>
+                    <h3>Разная подача для тем</h3>
+                    <p>У Британии — плотный контраст и строгий кадр, у C.C. — больше воздуха, мягкости и светового пространства. При переключении меняется не только палитра, но и настроение экрана.</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-media">
+                        <img class="theme-img theme-img-britannia" src="images/frames/britannia_poster.png" alt="Постер Лелуша для тёмной темы" loading="lazy">
+                        <img class="theme-img theme-img-cc" src="images/frames/cc_poster.png" alt="Постер C.C. для светлой темы" loading="lazy">
+                    </div>
+                    <h3>Мягкие анимации</h3>
+                    <p>Появление секций, подсветка карточек и переход между темами переработаны так, чтобы сайт ощущался плавнее и дороже на глаз.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="gallery reveal" id="gallery" data-reveal-delay="160" data-motion="right">
+            <h2>Образы мира</h2>
+            <div class="gallery-grid">
+                <article class="character-card">
+                    <div class="character-card-media">
+                        <img class="theme-img theme-img-britannia" src="images/frames/britannia_poster.png" alt="Лелуш в теме Британии" loading="lazy">
+                        <img class="theme-img theme-img-cc" src="images/frames/cc_poster.png" alt="C.C. в теме C.C." loading="lazy">
+                    </div>
+                    <h3>Главный образ темы</h3>
+                    <p>Для каждой темы выбран свой ведущий визуальный акцент: строгая драматичность у Британии и спокойная выразительность у C.C.</p>
+                    <span class="character-tag">Ведущий кадр</span>
+                </article>
+                <article class="character-card">
+                    <div class="character-card-media">
+                        <img class="theme-img theme-img-britannia" src="images/frames/britannia_panel.png" alt="Широкий кадр Британии" loading="lazy">
+                        <img class="theme-img theme-img-cc" src="images/frames/cc_panel.png" alt="Широкий кадр C.C." loading="lazy">
+                    </div>
+                    <h3>Фон для диалогов</h3>
+                    <p>Широкие изображения используются там, где нужен ритм сцены: карточки, отзывы, вступление и акцентные блоки.</p>
+                    <span class="character-tag">Панорамный слой</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="download reveal" data-reveal-delay="240" data-motion="up">
+            <h2>Присоединиться к Ордену Чёрных Рыцарей</h2>
+            <p>Бета-тест открыт. Оставьте свой email, и мы пришлём приглашение.</p>
+            <form class="signup-form" id="signup-form">
+                <input type="email" placeholder="your@mail.com" required>
+                <button type="submit" class="theme-btn pulse-animation">Получить Гиас</button>
+            </form>
+            <p class="form-message" id="form-message"></p>
+        </section>
+
+        <section class="comments-section reveal" id="comments" data-reveal-delay="320" data-motion="up">
+            <h2>Отзывы Ордена</h2>
+            <div class="comment-form-container">
+                <form id="comment-form" class="comment-form">
+                    <input type="text" id="comment-author" placeholder="Ваше имя (Аноним)" maxlength="30">
+                    <textarea id="comment-text" placeholder="Поделитесь впечатлением о браузере..." rows="3" required></textarea>
+                    <button type="submit" class="theme-btn">Отправить отзыв</button>
+                </form>
+            </div>
+            <div class="comments-list" id="comments-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Ashford Academy Tech. Все права защищены. «Единственный, кто может победить меня — это я сам.»</p>
+    </footer>
+
+    <script src="js/theme-switcher.js"></script>
+    <script src="js/comments.js"></script>
+    <script src="js/scroll-reveal.js"></script>
+    <script>
+        document.getElementById('signup-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const msg = document.getElementById('form-message');
+            msg.textContent = 'Заявка принята! Добро пожаловать в Орден.';
+            msg.style.color = 'var(--accent-color)';
+            setTimeout(() => msg.textContent = '', 4000);
+        });
+    </script>
+</body>
+</html>
